@@ -12,5 +12,29 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Pantalla Principal';
+});
+
+Route::get('/login', function () {
+    return 'welcome';
+});
+
+Route::get('/logout', function () {
+    return 'welcome';
+});
+
+Route::get('/catalog', function () {
+    return 'welcome';
+});
+
+Route::get('/catalog/show/{id}', function () {
+    return 'welcome';
+});
+
+Route::get('/catalog/create', function () {
+    return 'welcome';
+});
+
+Route::get('/catalog/edit/{id}', function () {
+    return 'welcome';
 });
