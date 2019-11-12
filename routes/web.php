@@ -12,29 +12,29 @@
 */
 
 Route::get('/', function () {
-    return 'Pantalla Principal';
+    return view('home');
 });
 
 Route::get('/login', function () {
-    return 'welcome';
+    return view('auth.login');
 });
 
 Route::get('/logout', function () {
-    return 'welcome';
+    return view('auth.logout');
 });
 
 Route::get('/catalog', function () {
-    return 'welcome';
+    return view('catalog.index');
 });
 
 Route::get('/catalog/show/{id}', function () {
-    return 'welcome';
+    return view('catalog.show',array('id'=>$id));
 });
 
 Route::get('/catalog/create', function () {
-    return 'welcome';
+    return view('catalog.create');
 });
 
 Route::get('/catalog/edit/{id}', function () {
-    return 'welcome';
+    return view('catalog.edit',array('id'=>$id));
 });
